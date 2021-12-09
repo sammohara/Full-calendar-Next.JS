@@ -7,7 +7,7 @@ const withTM = require('next-transpile-modules')([
   // '@babel/preset-react',
 ]);
 
-module.exports = withTm({
+module.exports = withTM({
   // Custom webpack config
 });
 
