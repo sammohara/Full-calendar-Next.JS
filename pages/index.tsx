@@ -1,9 +1,9 @@
 import Head from 'next/head';
 
 import FullCalendar from '@fullcalendar/react';
-import interactionPlugin from '@fullcalendar/interaction';
+// import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid';
+// import timeGridPlugin from '@fullcalendar/timegrid';
 
 import styles from '../styles/Home.module.css';
 
