@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
-// const withPlugins = require('next-compose-plugins');
-// const withSass = require('next-sass');
-// co
+const withPlugins = require('next-compose-plugins');
+const withSass = require('next-sass');
+
 const withTM = require('next-transpile-modules')([
   '@fullcalendar/common',
   '@babel/preset-react',
@@ -12,4 +12,9 @@ const withTM = require('next-transpile-modules')([
   '@fullcalendar/timegrid',
 ]);
 
-module.exports = withTM({});
+module.exports = withPlugins([[withTM], [withSass]], {
+  webpack: (config) => {
+    console.info();
+    return config;
+  },
+});
