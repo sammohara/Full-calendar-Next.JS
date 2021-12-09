@@ -1,8 +1,8 @@
 import Head from 'next/head';
 
-// import FullCalendar from '@fullcalendar/react';
+import FullCalendar from '@fullcalendar/react';
 // import interactionPlugin from '@fullcalendar/interaction';
-// import dayGridPlugin from '@fullcalendar/daygrid';
+import dayGridPlugin from '@fullcalendar/daygrid';
 // import timeGridPlugin from '@fullcalendar/timegrid';
 // import FullCalendar from '../components/calendar';
 
@@ -13,11 +13,7 @@ export default function Home() {
         <title>Full Calendar Next JS POC</title>
       </Head>
       Hi
-      {/* <FullCalendar
-        // innerRef={calendarRef}
-        plugins={[dayGridPlugin]}
-        initialView="dayGridMonth"
-      /> */}
+      <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" />
     </div>
   );
 }
