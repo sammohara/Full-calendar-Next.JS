@@ -12,7 +12,11 @@ export default function Home() {
         <title>Full Calendar Next JS POC</title>
       </Head>
 
-      <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" />
+      <FullCalendar
+        // innerRef={calendarRef}
+        plugins={[dayGridPlugin]}
+        initialView="dayGridMonth"
+      />
     </div>
   );
 }

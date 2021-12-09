@@ -12,9 +12,13 @@ const withTM = require('next-transpile-modules')([
   '@fullcalendar/timegrid',
 ]);
 
-module.exports = withPlugins([[withTM], [withSass]], {
-  webpack: (config) => {
-    console.info();
-    return config;
-  },
+module.exports = withTm({
+  // Custom webpack config
 });
+
+// module.exports = withPlugins([[withTM], [withSass]], {
+//   webpack: (config) => {
+//     console.info();
+//     return config;
+//   },
+// });
