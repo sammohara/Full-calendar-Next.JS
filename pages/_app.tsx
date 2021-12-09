@@ -1,4 +1,4 @@
-import 'node_modules/@fullcalendar/common/main.css';
+import '@fullcalendar/common/main.css';
 // import 'node_modules/@fullcalendar/daygrid/main.css';
 // import 'node_modules/@fullcalendar/timegrid/main.css';
 
