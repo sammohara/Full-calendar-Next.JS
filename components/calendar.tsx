@@ -1,6 +1,8 @@
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import styles from './Fullcalendar.module.scss';
+import '@fullcalendar/common/main.css';
+import '@fullcalendar/daygrid/main.css';
 
 export default function Calendar(props) {
   return (
