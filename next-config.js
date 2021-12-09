@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
-const withPlugins = require('next-compose-plugins');
-const withSass = require('next-sass');
+// /** @type {import('next').NextConfig} */
+// const withPlugins = require('next-compose-plugins');
+// const withSass = require('next-sass');
 
 const withTM = require('next-transpile-modules')([
   '@fullcalendar/common',
