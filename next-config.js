@@ -3,12 +3,7 @@
 // const withSass = require('next-sass');
 
 const withTM = require('next-transpile-modules')([
-  '@fullcalendar/core',
-  '@fullcalendar/common',
-  '@fullcalendar/daygrid',
-  '@fullcalendar/timegrid',
-  '@fullcalendar/interaction',
-  '@fullcalendar/react',
+  '@fullcalendar',
   // '@babel/preset-react',
 ]);
 
