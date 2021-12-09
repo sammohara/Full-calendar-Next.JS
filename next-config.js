@@ -1,15 +1,15 @@
 // /** @type {import('next').NextConfig} */
-const withPlugins = require('next-compose-plugins');
-const withSass = require('next-sass');
+// const withPlugins = require('next-compose-plugins');
+// const withSass = require('next-sass');
 
 const withTM = require('next-transpile-modules')([
-  '@fullcalendar/common',
-  '@babel/preset-react',
   '@fullcalendar/core',
+  '@fullcalendar/common',
   '@fullcalendar/daygrid',
+  '@fullcalendar/timegrid',
   '@fullcalendar/interaction',
   '@fullcalendar/react',
-  '@fullcalendar/timegrid',
+  // '@babel/preset-react',
 ]);
 
 module.exports = withTm({
